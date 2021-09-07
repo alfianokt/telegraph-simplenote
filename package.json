@@ -1,0 +1,28 @@
+{
+  "name": "telegraph-simplenote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "srs/index.ts",
+  "scripts": {
+    "test:build": "esbuild test/path-parser.test.ts test/content-parser.test.ts test/index.test.ts --outdir=test/dist --format=cjs --bundle",
+    "test": "node test/dist/index.test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfianokt/telegraph-simplenote"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/alfianokt/telegraph-simplenote/issues"
+  },
+  "homepage": "https://github.com/alfianokt/telegraph-simplenote",
+  "devDependencies": {
+    "esbuild": "^0.12.25",
+    "nodemon": "^2.0.12",
+    "uvu": "^0.5.1"
+  },
+  "dependencies": {
+    "telegra.ph": "^1.0.1"
+  }
+}
