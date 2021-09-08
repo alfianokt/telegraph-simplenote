@@ -1,8 +1,16 @@
 {
   "name": "telegraph-simplenote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "srs/index.ts",
+  "main": "./src/index.ts",
+  "type": "module",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": "./src/*"
+  },
+  "files": [
+    "./src/*"
+  ],
   "scripts": {
     "test:build": "esbuild test/path-parser.test.ts test/content-parser.test.ts test/index.test.ts --outdir=test/dist --format=cjs --bundle",
     "test": "node test/dist/index.test"
