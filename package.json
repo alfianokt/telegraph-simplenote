@@ -1,6 +1,6 @@
 {
   "name": "telegraph-simplenote",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "files": [
     "src/*.ts",
