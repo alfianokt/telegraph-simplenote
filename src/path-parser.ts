@@ -7,7 +7,7 @@ const ca = c.split('');
  * @param {String} p path
  * @returns {String}
  */
-const encode = (p: String) => {
+export const encode = (p: String) => {
   try {
     const ps = p.split('-');
     return [
@@ -26,7 +26,7 @@ const encode = (p: String) => {
  * @param {String} c code
  * @returns {String}
  */
-const decode = (c: String) => {
+export const decode = (c: String) => {
   try {
     const cs = c.split('');
     return cs
@@ -39,5 +39,3 @@ const decode = (c: String) => {
     return null;
   }
 };
-
-export default { encode, decode };

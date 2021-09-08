@@ -1,7 +1,7 @@
 import { NodeElement } from "telegra.ph/typings/telegraph";
 import config from './config';
 
-type Content = {
+export type Content = {
   title: string | any;
   description: string | any;
   link: string | any;
@@ -15,7 +15,7 @@ type Content = {
  * @param {String} title
  * @returns {Content}
  */
-function encode(content: Content, title: String): Array<NodeElement> {
+export const encode = (content: Content, title: String): Array<NodeElement> => {
   return [
     {
       tag: "a",
@@ -61,7 +61,7 @@ function encode(content: Content, title: String): Array<NodeElement> {
  * @param {String} title
  * @returns {Content}
  */
-function decode(nodes: Array<NodeElement>, title: String): Content {
+export const decode = (nodes: Array<NodeElement>, title: String): Content => {
   if (nodes.length > 0) {
     if (nodes[0].tag == 'a' && nodes[0].children == title) {
       try {
@@ -86,4 +86,3 @@ function decode(nodes: Array<NodeElement>, title: String): Content {
   return null;
 }
 
-export default { encode, decode };

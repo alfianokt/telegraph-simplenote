@@ -1,5 +1,3 @@
-import client from "./client";
-import contentParser from "./content-parser";
-import pathParser from './path-parser';
-
-export default { client, contentParser, pathParser };
+// export client from "./client";
+export * as contentParser from "./content-parser";
+export * as pathParser from './path-parser';
