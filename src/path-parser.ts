@@ -32,9 +32,9 @@ export const decode = (c: String) => {
     return cs
       .map((e, i) => {
         const _ = ca.indexOf(e);
-        return i < 2 ? (_ < 10 ? `0${_}` : _) : _;
+        return i < 2 ? ((_ < 10 ? `0${_}` : _) + '-') : _;
       })
-      .join('-');
+      .join('');
   } catch (e) {
     return null;
   }
