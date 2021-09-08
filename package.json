@@ -2,6 +2,10 @@
   "name": "telegraph-simplenote",
   "version": "1.0.2",
   "description": "",
+  "files": [
+    "src/*.ts",
+    "src/**/*.ts"
+  ],
   "main": "./src/index.ts",
   "type": "module",
   "types": "./src/index.d.ts",
