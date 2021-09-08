@@ -28,6 +28,10 @@ const data = [
     path: 'title-01-31-2',
     code: 'bFc'
   },
+  {
+    path: 'title-01-31-22',
+    code: 'bFcc'
+  },
 ]
 
 test('Path parser can encode', () => {
