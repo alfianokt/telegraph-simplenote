@@ -1,7 +1,7 @@
 import { test } from 'uvu';
 import * as assert from 'uvu/assert';
 import config from "../src/config";
-import contentParser from "../src/content-parser";
+import * as contentParser from "../src/content-parser";
 
 const data = {
   original: {

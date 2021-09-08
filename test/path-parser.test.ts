@@ -1,6 +1,6 @@
 import { test } from 'uvu';
 import * as assert from 'uvu/assert';
-import pathParser from "../src/path-parser";
+import * as pathParser from "../src/path-parser";
 
 const title = 'title';
 const data = [
